@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Invie - tus mejores guitarras!!</title>
+    <link href="https://fonts.googleapis.com/css?family=Allerta|Montserrat:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/invie.css" />
+  </head>
+  <body>
+    <section id="portada" class="portada background"> <!--PORTADA-->
+      <header id="header" class="header container"><!--HEADER-->
+        <figure class="logotipo"><!--logotipo-->
+          <img src="images/invie.png" width="186" height="60" alt="Invie logotipo">
+        </figure>
+        <nav class="menu"><!--menú-->
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#guitarras">Guitarras</a></li>
+            <li><a href="precios.html">Precios</a></li>
+          </ul>
+        </nav>
+      </header>
+      <div class="container">
+        <h1 class="titulo">Guitarras <span>invie</span>sibles</h1><!-- título -->
+        <h3 class="title-a">Sé la estrella de rock que siempre quisiste ser</h3><!-- resumen -->
+        <button class="btn">Conoce más</button><!-- botón -->
+      </div>
+    </section>
+
+    <section id="guitarras" class="guitarras container"><!--GUITARRAS-->
+      <h2>Nuestras guitarras</h2><!-- titulo -->
+      <article class="guitarra"><!-- guitarra1 -->
+        <img src="images/invie-acustica.png" width="300"alt="invie acústica" class="right">
+        <div class="contenedor-guitarra-a">
+          <h3 class="title-b">Invie Acústica</h3>
+          <ol>
+            <li>Estilo vintage</li>
+            <li>Madera pura</li>
+            <li>Incluye estuche invisible de aluminio</li>
+          </ol>
+        </div>
+
+      </article>
+      <article class="guitarra"><!-- guitarra2 -->
+        <img src="images/invie-classic.png" width="350" alt="invie classic" class="left">
+        <div class="contenedor-guitarra-b">
+          <h3 class="title-b">Invie Classic</h3>
+          <ol>
+            <li>Estilo vintage</li>
+            <li>Liviana</li>
+            <li>Inicia tu camino como Rockstar</li>
+          </ol>
+        </div>
+      </article>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="contacto">
+          <img src="images/invie-white.png" alt="logotipo blanco">
+          <a href="tel:+123456789"><strong>Teléfono</strong><strong>12345679</strong></a>
+          <a href="mailto:nuggetmint@gmail.com"><strong>E-mail</strong><strong>nuggetmint@gmail.com</strong></a>
+        </div>
+
+        <form class="formulario">
+          <div class="col1">
+            <label for="nombre">Nombre</label>
+            <input type="text" required id="nombre" name="nombre"/>
+            <label for="email">E-mail</label>
+            <input type="email" required id="email" name="email">
+            <div class="sexo">
+              <label for="mujer">
+                <input type="radio" id="mujer" name="sexo" value="mujer">mujer
+              </label>
+              <label for="hombre">
+                <input type="radio" id="hombre" name="sexo" value="hombre">hombre
+              </label>
+            </div>
+
+            <div class="intereses">
+              <label for="cotizacion">
+                <input type="checkbox" id="cotizacion" name="intereses" value="cotizacion">Cotización
+              </label>
+              <label for="reclamos">
+                <input type="checkbox" id="reclamos" name="intereses" value="reclamos">Reclamos
+              </label>
+              <label for="comentarios">
+                <input type="checkbox" id="comentarios" name="intereses" value="comentarios">Comentarios
+              </label>
+              <label for="otros">
+                <input type="checkbox" id="otros" name="intereses" value="otros">Otros
+              </label>
+            </div>
+          </div>
+
+          <div class="col2">
+            <label for="comentarios">Comentarios</label>
+            <textarea name="comentarios" id="comentarios" cols="25" rows="7"></textarea>
+            <input type="submit" value="Enviar" class="btn" />
+          </div>
+
+        </form>
+      </div>
+    </footer>
+  </body>
+</html>
